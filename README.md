@@ -1,4 +1,12 @@
 # Using YOLOv3-Tiny on Xilinx Kria KV260 Vision AI Starter Kit
+## Contents
+- [Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )](#convert-darknet-to-tensorflow--colab-or-azure-machine-learning-)
+- [Create Azure Ubuntu 22.04 VM and Upload Files](#diagram)
+- [Logging in to VM](#logging-in-to-vm)
+- [Install Docker Engine](#install-docker-engine)
+- [Upload flask-sample to VM](#upload-flask-sample-to-vm)
+- [Build Docker Image](#build-docker-image)
+
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
 * Training
 * Download data.zip
@@ -10,7 +18,7 @@
   * yolov3-tiny.pb
   * yolov3-tiny.weights
 
-## Create Azure Ubuntu 22.04 VM
+## Create Azure Ubuntu 22.04 VM & Upload Files
 * Upload data.zip
   * sudo scp ./data.zip ACCOUNT@VM-IP:~
 * Upload Datasets .zip
