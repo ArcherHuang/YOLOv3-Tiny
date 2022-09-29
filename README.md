@@ -1,6 +1,6 @@
 # Using YOLOv3-Tiny on Xilinx Kria KV260 Vision AI Starter Kit
 ## Contents
-- [Folders & Files in this Repository](#folders--files)
+- [Folders & Files in this Repository](#folders--files-in-this-repository)
 - [Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )](#convert-darknet-to-tensorflow--colab-or-azure-machine-learning-)
 - [Create Azure Ubuntu 22.04 VM and Upload Files](#create-azure-ubuntu-2204-vm--upload-files)
 - [Logging in to Azure Ubuntu 22.04 VM](#logging-in-to-azure-ubuntu-2204-vm)
