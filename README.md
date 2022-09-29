@@ -47,6 +47,8 @@
     * yolov3-tiny.weights
 
 ## Create Azure Ubuntu 22.04 VM & Upload Files
+* Azure Portal
+  * https://portal.azure.com/
 * Upload data.zip
   * sudo scp ./data.zip ACCOUNT@VM-IP:~
 * Upload Datasets .zip
