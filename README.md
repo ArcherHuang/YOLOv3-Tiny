@@ -49,9 +49,9 @@
 ## Create Azure Ubuntu 22.04 VM & Upload Files
 * Azure Portal
   * https://portal.azure.com/
-* Upload data.zip
+* Upload data.zip from Local to Azure VM
   * sudo scp ./data.zip ACCOUNT@VM-IP:~
-* Upload Datasets .zip
+* Upload Datasets .zip from Local to Azure VM
   * sudo scp ./Datasets.zip ACCOUNT@VM-IP:~
 
 ## Logging in to Azure Ubuntu 22.04 VM
