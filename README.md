@@ -37,7 +37,6 @@
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
 * Training & Conversion Process
 * After the conversion process, we get .pb and .ckpt files ( data.zip ).
-* Download data.zip to Local
   * data.zip 
     * checkpoint
     * yolov3-tiny.cfg
@@ -46,6 +45,7 @@
     * yolov3-tiny.ckpt.meta
     * yolov3-tiny.pb
     * yolov3-tiny.weights
+* Download data.zip to Local
 
 ## Create Azure Ubuntu 22.04 VM & Upload Files
 * Azure Portal
