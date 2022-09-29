@@ -19,7 +19,7 @@
 ## Logging in to Azure Ubuntu 22.04 VM
 * ssh ACCOUNT@VM-IP
 
-## Install Docker Engine
+## Install Docker Engine on Azure Ubuntu 22.04 VM
 * Download Script
 ```
 wget https://raw.githubusercontent.com/ArcherHuang/Docker-Python-Flask/main/Script/install-docker.sh
@@ -35,14 +35,14 @@ chmod 777 install-docker.sh
 sudo ./install-docker.sh
 ```
 
-## Download xilinx/vitis-ai Docker Image
+## Download xilinx/vitis-ai Docker Image on Azure Ubuntu 22.04 VM
 ```
 sudo docker pull xilinx/vitis-ai:1.4.916
 
 sudo docker images
 ```
 
-## Run xilinx/vitis-ai Docker Image
+## Run xilinx/vitis-ai Docker Image on Azure Ubuntu 22.04 VM
 * on Terminal 1
 ```
 git clone https://github.com/Xilinx/Vitis-AI.git
@@ -54,7 +54,7 @@ sudo ./docker_run.sh xilinx/vitis-ai:1.4.916
 conda activate vitis-ai-tensorflow
 ```
 
-## 移動檔案進 container
+## 移動檔案進 vitis-ai:1.4.916 Container
 * on Terminal 2
 ```
 sudo apt install unzip
