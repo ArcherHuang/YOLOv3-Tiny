@@ -1,5 +1,6 @@
 # Using YOLOv3-Tiny on Xilinx Kria KV260 Vision AI Starter Kit
 ## Contents
+- [Folders & Files](#license)
 - [Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )](#convert-darknet-to-tensorflow--colab-or-azure-machine-learning-)
 - [Create Azure Ubuntu 22.04 VM and Upload Files](#create-azure-ubuntu-2204-vm--upload-files)
 - [Logging in to Azure Ubuntu 22.04 VM](#logging-in-to-azure-ubuntu-2204-vm)
@@ -13,6 +14,24 @@
 - [SCP Files to KV260](#scp-files-to-kv260)
 - [Run Test](#run-test)
 - [License](#license)
+
+## Folders & Files
+```
+├── Config
+│   ├── aiinference.json
+│   ├── drawresult.json
+│   ├── label.json
+│   ├── preprocess.json
+│   └── yolov3tiny.prototxt
+├── LICENSE
+├── Python
+│   └── calibration.py
+├── README.md
+├── Script
+│   └── gst-yolov3-tiny.sh
+└── pre-trained-model
+    └── yolov3-tiny.conv.11
+```
 
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
 * Training
