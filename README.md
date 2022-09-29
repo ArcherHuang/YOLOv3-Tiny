@@ -222,3 +222,6 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
     ```
     sh gst-yolov3-tiny.sh
     ```
+
+## License
+This sample is licensed under the [MIT](./LICENSE) license.
