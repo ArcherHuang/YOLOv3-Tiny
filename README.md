@@ -207,7 +207,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 
 ## SCP Files to KV260
 * yolov3tiny.xmodel & [yolov3tiny.prototxt](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/yolov3tiny.prototxt) & [label.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/label.json)
-  * on AI Box
+  * on Xilinx Kria KV260 Vision AI Starter Kit
     ```
     sudo chmod 777 /opt/xilinx/share/vitis_ai_library/models/kv260-smartcam
 
@@ -226,7 +226,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     ```
 
 * [preprocess.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/preprocess.json) & [drawresult.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/drawresult.json) & [aiinference.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/aiinference.json)
-  * on AI Box
+  * on Xilinx Kria KV260 Vision AI Starter Kit
     ```
     sudo chmod 777 /opt/xilinx/share/ivas/smartcam
   
@@ -245,7 +245,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     scp aiinference.json petalinux@169.254.158.168:/opt/xilinx/share/ivas/smartcam/yolov3tiny
     ```
 ## Run Test
-* on AI Box
+* on Xilinx Kria KV260 Vision AI Starter Kit
   * Load App
     ```
     sudo xmutil unloadapp
