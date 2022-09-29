@@ -51,7 +51,8 @@
   * sudo scp ./Datasets.zip ACCOUNT@VM-IP:~
 
 ## Logging in to Azure Ubuntu 22.04 VM
-* ssh ACCOUNT@VM-IP
+* on Terminal 1 & Terminal 2
+  * ssh ACCOUNT@VM-IP
 
 ## Install Docker Engine on Azure Ubuntu 22.04 VM
 * Download Script
