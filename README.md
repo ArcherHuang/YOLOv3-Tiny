@@ -34,7 +34,8 @@
 ```
 
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
-* Training
+* Training & Conversion
+* After the conversion process, we get .pb and .ckpt files ( data.zip ).
 * Download data.zip
   * checkpoint
   * yolov3-tiny.cfg
