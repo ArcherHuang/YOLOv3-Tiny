@@ -34,7 +34,7 @@
 ```
 
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
-* Training & Conversion
+* Training & Conversion Process
 * After the conversion process, we get .pb and .ckpt files ( data.zip ).
 * Download data.zip
   * checkpoint
