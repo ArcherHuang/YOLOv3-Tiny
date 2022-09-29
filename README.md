@@ -153,7 +153,7 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
 * drawresult.json
 
 ## SCP Files to KV260
-* yolov3tiny.xmodel & yolov3tiny.prototxt & label.json
+* [yolov3tiny.xmodel]() & [yolov3tiny.prototxt]() & [label.json]()
   * on AI Box
     ```
     sudo chmod 777 /opt/xilinx/share/vitis_ai_library/models/kv260-smartcam
@@ -205,7 +205,7 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
     ```
     cd ~
 
-
+    https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Script/gst-yolov3-tiny.sh
     ```
   * Change Mode
     ```
