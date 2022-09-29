@@ -2,6 +2,13 @@
 ## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
 * Training
 * Download data.zip
+  * checkpoint
+  * yolov3-tiny.cfg
+  * yolov3-tiny.ckpt.data-00000-of-00001
+  * yolov3-tiny.ckpt.index
+  * yolov3-tiny.ckpt.meta
+  * yolov3-tiny.pb
+  * yolov3-tiny.weights
 
 ## Create Azure Ubuntu 22.04 VM
 * Upload data.zip
