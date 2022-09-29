@@ -252,7 +252,7 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
     ```
     cd ~
 
-    https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Script/gst-yolov3-tiny.sh
+    Ref https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Script/gst-yolov3-tiny.sh
     ```
   * Change Mode
     ```
