@@ -1,0 +1,35 @@
+model {
+  name: "yolov3tiny"
+  kernel {
+     name: "yolov3tiny"
+     mean: 0
+     mean: 0
+     mean: 0
+     scale: 0.25
+     scale: 0.25
+     scale: 0.25
+  }
+  model_type : YOLOv3
+  yolo_v3_param {
+    num_classes: 2
+    anchorCnt: 3
+    conf_threshold: 0.3
+    nms_threshold: 0.45
+    layer_name:"yolov3-tiny/convolutional13/BiasAdd/aquant"
+    layer_name:"yolov3-tiny/convolutional10/BiasAdd/aquant"
+    biases: 10
+    biases: 14
+    biases: 23
+    biases: 27
+    biases: 37
+    biases: 58
+    biases: 81
+    biases: 82
+    biases: 135
+    biases: 169
+    biases: 344
+    biases: 319
+    test_mAP: false
+  }
+  is_tf : true
+}

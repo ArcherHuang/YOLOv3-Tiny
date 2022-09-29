@@ -1,0 +1,16 @@
+{
+    "model-name": "yolov3tiny",
+    "num-labels": 2,
+    "labels" :[
+      {
+        "name": "helmet",
+        "label": 0,
+        "display_name" : "helmet"
+      },
+      {
+        "name": "head",
+        "label": 1,
+        "display_name" : "head"
+      }
+    ]
+}
