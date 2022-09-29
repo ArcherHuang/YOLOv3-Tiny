@@ -113,84 +113,90 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 ```
 
 ## Build a frozen graph
+* Visualizer for neural network
+  * https://netron.app/
 * Create a directory and name it freez_graph
-```
-https://netron.app/
+  * on Container 
+    ```
+    cd /data
 
-cd /data
+    mkdir freez_graph
 
-mkdir freez_graph
-
-freeze_graph \
---input_graph yolov3-tiny.pb \
---input_checkpoint yolov3-tiny.ckpt \
---output_graph freez_graph/frozen_graph.pb \
---output_node_names yolov3-tiny/convolutional10/BiasAdd \
---input_binary true
+    freeze_graph \
+    --input_graph yolov3-tiny.pb \
+    --input_checkpoint yolov3-tiny.ckpt \
+    --output_graph freez_graph/frozen_graph.pb \
+    --output_node_names yolov3-tiny/convolutional10/BiasAdd \
+    --input_binary true
 
 
-The output file will be frozen_graph.pb
-/data/freez_graph/frozen_graph.pb
-```
+    The output file will be frozen_graph.pb
+    /data/freez_graph/frozen_graph.pb
+    ```
 
 # Quantization
 * Create [calibration.py](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py)
-```
-cd ~
+  * on Container 
+    ```
+    cd ~
 
-vi calibration.py
-```
+    vi calibration.py
+    ```
 
 * To quantize the model
-```
-vai_q_tensorflow quantize \
---input_frozen_graph /data/freez_graph/frozen_graph.pb \
---input_fn calibration.calib_input \
---output_dir quantization/ \
---input_nodes yolov3-tiny/net1 \
---output_nodes yolov3-tiny/convolutional10/BiasAdd \
---input_shapes ?,416,416,3 \
---calib_iter 1
+  * on Container 
+    ```
+    vai_q_tensorflow quantize \
+    --input_frozen_graph /data/freez_graph/frozen_graph.pb \
+    --input_fn calibration.calib_input \
+    --output_dir quantization/ \
+    --input_nodes yolov3-tiny/net1 \
+    --output_nodes yolov3-tiny/convolutional10/BiasAdd \
+    --input_shapes ?,416,416,3 \
+    --calib_iter 1
 
 
-The output file will be quantize_eval_model.pb
-/home/vitis-ai-user/quantization/quantize_eval_model.pb
-```
+    The output file will be quantize_eval_model.pb
+    /home/vitis-ai-user/quantization/quantize_eval_model.pb
+    ```
 
 * Create [arch.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/arch.json)
-```
-cd ~
+  * on Container 
+    ```
+    cd ~
 
-vi arch.json
+    vi arch.json
 
-{
-    "fingerprint":"0x1000020F6014406"
-}
-```
+    {
+        "fingerprint":"0x1000020F6014406"
+    }
+    ```
 
 * Compile model
-```
-cd ~
+  * on Container 
+    ```
+    cd ~
 
-vai_c_tensorflow \
---frozen_pb quantization/quantize_eval_model.pb \
--a arch.json \
--o yolov3tiny \
--n yolov3tiny
+    vai_c_tensorflow \
+    --frozen_pb quantization/quantize_eval_model.pb \
+    -a arch.json \
+    -o yolov3tiny \
+    -n yolov3tiny
 
 
-The output file will be 
-/home/vitis-ai-user/yolov3tiny/md5sum.txt
-/home/vitis-ai-user/yolov3tiny/meta.json
-/home/vitis-ai-user/yolov3tiny/yolov3tiny.xmodel
-```
+    The output file will be 
+    /home/vitis-ai-user/yolov3tiny/md5sum.txt
+    /home/vitis-ai-user/yolov3tiny/meta.json
+    /home/vitis-ai-user/yolov3tiny/yolov3tiny.xmodel
+    ```
 
 * Copy yolov3tiny Folder to VM (/home/ACCOUNT/yolov3tiny)
-```
-sudo docker ps -a
+  * on VM
+    ```
+    sudo docker ps -a
 
-sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
-```
+    sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
+    ```
 
 ## Customizing Smart Camera Application
 * [yolov3tiny.prototxt](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/yolov3tiny.prototxt)
