@@ -14,6 +14,7 @@
 - [SCP Files to KV260](#scp-files-to-kv260)
 - [Run Test](#run-test)
 - [License](#license)
+- [Reference](#reference)
 
 ## Folders & Files in this Repository
 ```
@@ -272,6 +273,6 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 ## License
 This sample is licensed under the [MIT](./LICENSE) license.
 
-## Referenct
+## Reference
 * https://docs.xilinx.com/r/en-US/ug1414-vitis-ai/Card-Setup-Cloud
 * http://xilinx.eetrend.com/files/2022-06/wen_zhang_/100561377-258283-ug1333-ai-optimizer.pdf
