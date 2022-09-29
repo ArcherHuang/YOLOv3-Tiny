@@ -45,8 +45,6 @@
     * yolov3-tiny.ckpt.meta
     * yolov3-tiny.pb
     * yolov3-tiny.weights
-  * Download Command
-    * sudo scp ./data.zip ACCOUNT@LOCAL-IP:LOCAL-PATH
 
 ## Create Azure Ubuntu 22.04 VM & Upload Files
 * Upload data.zip
