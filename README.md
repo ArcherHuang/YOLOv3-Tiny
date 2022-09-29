@@ -37,13 +37,16 @@
 * Training & Conversion Process
 * After the conversion process, we get .pb and .ckpt files ( data.zip ).
 * Download data.zip to Local
-  * checkpoint
-  * yolov3-tiny.cfg
-  * yolov3-tiny.ckpt.data-00000-of-00001
-  * yolov3-tiny.ckpt.index
-  * yolov3-tiny.ckpt.meta
-  * yolov3-tiny.pb
-  * yolov3-tiny.weights
+  * data.zip 
+    * checkpoint
+    * yolov3-tiny.cfg
+    * yolov3-tiny.ckpt.data-00000-of-00001
+    * yolov3-tiny.ckpt.index
+    * yolov3-tiny.ckpt.meta
+    * yolov3-tiny.pb
+    * yolov3-tiny.weights
+  * Download Command
+    * sudo scp ./data.zip ACCOUNT@LOCAL-IP:LOCAL-PATH
 
 ## Create Azure Ubuntu 22.04 VM & Upload Files
 * Upload data.zip
