@@ -146,14 +146,14 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
 ```
 
 ## Customizing Smart Camera Application
-* yolov3tiny.prototxt
-* preprocess.json
-* aiinference.json
-* label.json
-* drawresult.json
+* [yolov3tiny.prototxt](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/yolov3tiny.prototxt)
+* [preprocess.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/preprocess.json)
+* [aiinference.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/aiinference.json)
+* [label.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/label.json)
+* [drawresult.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/drawresult.json)
 
 ## SCP Files to KV260
-* [yolov3tiny.xmodel]() & [yolov3tiny.prototxt]() & [label.json]()
+* yolov3tiny.xmodel & [yolov3tiny.prototxt](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/yolov3tiny.prototxt) & [label.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/label.json)
   * on AI Box
     ```
     sudo chmod 777 /opt/xilinx/share/vitis_ai_library/models/kv260-smartcam
@@ -172,7 +172,7 @@ sudo docker cp CONTAINER-ID:/home/vitis-ai-user/yolov3tiny /home/`whoami`
     scp label.json petalinux@169.254.158.168:/home/petalinux/yolov3tiny
     ```
 
-* preprocess.json & drawresult.json & aiinference.json
+* [preprocess.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/preprocess.json) & [drawresult.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/drawresult.json) & [aiinference.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/aiinference.json)
   * on AI Box
     ```
     sudo chmod 777 /opt/xilinx/share/ivas/smartcam
