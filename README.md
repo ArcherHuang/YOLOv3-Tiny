@@ -19,6 +19,7 @@
 ```
 ├── Config
 │   ├── aiinference.json
+│   ├── arch.json
 │   ├── drawresult.json
 │   ├── label.json
 │   ├── preprocess.json
@@ -156,7 +157,7 @@ The output file will be quantize_eval_model.pb
 /home/vitis-ai-user/quantization/quantize_eval_model.pb
 ```
 
-* Create arch.json
+* Create [arch.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/arch.json)
 ```
 cd ~
 
