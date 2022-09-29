@@ -1,5 +1,5 @@
 # Using YOLOv3-Tiny on Xilinx Kria KV260 Vision AI Starter Kit
-## Convert Darknet to Tensorflow ( Colab or Azure Azure Machine Learning )
+## Convert Darknet to Tensorflow ( Colab or Azure Machine Learning )
 * Training
 * Download data.zip
 
