@@ -6,7 +6,7 @@
 - [Install Docker Engine on Azure Ubuntu 22.04 VM](#install-docker-engine-on-azure-ubuntu-2204-vm)
 - [Download xilinx/vitis-ai Docker Image on Azure Ubuntu 22.04 VM](#download-xilinxvitis-ai-docker-image-on-azure-ubuntu-2204-vm)
 - [Run xilinx/vitis-ai Docker Image on Azure Ubuntu 22.04 VM](#run-xilinxvitis-ai-docker-image-on-azure-ubuntu-2204-vm)
-- [移動檔案進 vitis-ai:1.4.916 Container](#%E7%A7%BB%E5%8B%95%E6%AA%94%E6%A1%88%E9%80%B2-vitis-ai14916-container)
+- [Copy Files to vitis-ai:1.4.916 Container](#%E7%A7%BB%E5%8B%95%E6%AA%94%E6%A1%88%E9%80%B2-vitis-ai14916-container)
 - [Build a frozen graph](#build-a-frozen-graph)
 - [Quantization](#quantization)
 - [Customizing Smart Camera Application](#customizing-smart-camera-application)
@@ -69,7 +69,7 @@ sudo ./docker_run.sh xilinx/vitis-ai:1.4.916
 conda activate vitis-ai-tensorflow
 ```
 
-## 移動檔案進 vitis-ai:1.4.916 Container
+## Copy Files to vitis-ai:1.4.916 Container
 * on Terminal 2
 ```
 sudo apt install unzip
