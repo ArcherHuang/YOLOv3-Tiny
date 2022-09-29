@@ -94,7 +94,7 @@ The output file will be frozen_graph.pb
 ```
 
 # Quantization
-* Create calibration.py
+* Create [calibration.py](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py)
 ```
 cd ~
 
