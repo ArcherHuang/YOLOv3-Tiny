@@ -60,8 +60,8 @@
 
 |  | Purpose | Command |
 | :------: | :------: | :------: |
-| Terminal 1 | Run `xilinx/vitis-ai Container` | ssh ACCOUNT@VM-IP |
-| Terminal 2 | Move files from an `Azure Ubuntu VM` up to a `xilinx/vitis-ai Container`, or from a `xilinx/vitis-ai Container` down to an `Azure Ubuntu VM` | ssh ACCOUNT@VM-IP |
+| Terminal 1 | Run xilinx/vitis-ai Container | ssh ACCOUNT@VM-IP |
+| Terminal 2 | Move files from an Azure Ubuntu VM up to a xilinx/vitis-ai Container, or from a xilinx/vitis-ai Container down to an Azure Ubuntu VM | ssh ACCOUNT@VM-IP |
 
 ## Install Docker Engine on Azure Ubuntu 22.04 VM
 * Download Script
