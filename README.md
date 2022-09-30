@@ -139,13 +139,16 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     ```
 
 ## Quantization
-* Create [calibration.py](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py)
+* Create Code
   * on Container 
-    ```
-    cd ~
-
-    vi calibration.py
-    ```
+    * Go to Home
+      ```
+      cd ~
+      ```
+    * Create [calibration.py](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py)
+      ```
+      vi calibration.py
+      ```
     * Update `calibration.py` Code
       * [Dataset Path](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py#L3)
       * [File Extension](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py#L20)
