@@ -12,7 +12,7 @@
 - [Quantization](#quantization)
 - [Customizing Smart Camera Application](#customizing-smart-camera-application)
 - [SCP Files to KV260](#scp-files-to-kv260)
-- [Run Test](#run-test)
+- [Running the Model](#running-the-model)
 - [License](#license)
 - [Reference](#reference)
 
