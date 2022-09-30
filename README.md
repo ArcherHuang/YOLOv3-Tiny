@@ -11,7 +11,7 @@
 - [Build a frozen graph](#build-a-frozen-graph)
 - [Quantization](#quantization)
 - [Customizing Smart Camera Application](#customizing-smart-camera-application)
-- [SCP Files to KV260](#scp-files-to-kv260)
+- [Deploying the Model and the Configs](#scp-files-to-kv260)
 - [Running the Model](#running-the-model)
 - [License](#license)
 - [Reference](#reference)
@@ -206,7 +206,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 * [label.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/label.json)
 * [drawresult.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/drawresult.json)
 
-## SCP Files to KV260
+## Deploying the Model and the Configs
 * yolov3tiny.xmodel & [yolov3tiny.prototxt](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/yolov3tiny.prototxt) & [label.json](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Config/label.json)
   * on Xilinx Kria KV260 Vision AI Starter Kit
     ```
