@@ -11,7 +11,7 @@
 - [Build a frozen graph](#build-a-frozen-graph)
 - [Quantization](#quantization)
 - [Customizing Smart Camera Application](#customizing-smart-camera-application)
-- [Deploying the Model and the Configs](#scp-files-to-kv260)
+- [Deploying the Model and the Configs](#deploying-the-model-and-the-configs)
 - [Running the Model](#running-the-model)
 - [License](#license)
 - [Reference](#reference)
