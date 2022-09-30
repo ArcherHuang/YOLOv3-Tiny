@@ -116,7 +116,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 ## Build a frozen graph
 * Visualizer for neural network
   * https://netron.app/
-* Create a directory and name it freez_graph
+* Create a directory and name it `freez_graph`
   * on Container 
     ```
     cd /data
