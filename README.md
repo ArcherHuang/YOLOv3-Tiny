@@ -191,7 +191,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     /home/vitis-ai-user/yolov3tiny/yolov3tiny.xmodel
     ```
 
-* Copy yolov3tiny Folder to VM (/home/ACCOUNT/yolov3tiny)
+* Copy yolov3tiny Folder to VM ( /home/ACCOUNT/yolov3tiny )
   * on VM
     ```
     sudo docker ps -a
