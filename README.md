@@ -148,7 +148,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     ```
     * Update `calibration.py` Code
       * [Dataset Path](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py#L3)
-      * [File extension](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py#L20)
+      * [File Extension](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py#L20)
 
 * To quantize the model
   * on Container 
