@@ -135,7 +135,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
     /data/freez_graph/frozen_graph.pb
     ```
 
-# Quantization
+## Quantization
 * Create [calibration.py](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Python/calibration.py)
   * on Container 
     ```
