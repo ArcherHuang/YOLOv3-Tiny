@@ -255,7 +255,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 
     sudo xmutil loadapp kv260-smartcam
     ```
-  * gst-yolov3-tiny.sh
+  * [gst-yolov3-tiny.sh](https://github.com/ArcherHuang/YOLOv3-Tiny/blob/main/Script/gst-yolov3-tiny.sh)
     ```
     cd ~
 
