@@ -245,7 +245,7 @@ sudo docker cp ./Datasets CONTAINER-ID:/
 
     scp aiinference.json petalinux@169.254.158.168:/opt/xilinx/share/ivas/smartcam/yolov3tiny
     ```
-## Run Test
+## Running the Model
 * on Xilinx Kria KV260 Vision AI Starter Kit
   * Load App
     ```
